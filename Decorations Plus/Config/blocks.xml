@@ -19,6 +19,7 @@
 	<property name="HeatMapTime" value="1200"/>
 	<property name="HeatMapFrequency" value="25"/>
 	<property name="Stacknumber" value="1"/>
+	<property name="UnlockedBy" value="Book_Decorations_Plus"/>
 
 	<property class="Workstation">
 		<property name="Modules" value="output"/>		
@@ -228,6 +229,11 @@
 <append xpath="/blocks/block[@name='decoTreadmill']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='decoStationaryBike']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='cntHardenedChestSecure']"><property name="SellableToTrader" value="false"/></append>
-<append xpath="/blocks/block[@name='cntLootChestHero']"><property name="SellableToTrader" value="false"/></append>		
+<append xpath="/blocks/block[@name='cntLootChestHero']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntPillCaseClosed']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='decoCarMotorFlipped']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='decoCarTireStack']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='decoCowSkull']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='decoWildWestWagon']"><property name="SellableToTrader" value="false"/></append>						
 </append>				
 </config>

@@ -2,8 +2,8 @@
 <xml>
 	<ModInfo>
 		<Name value="Decorations Plus" />
-		<Description value="Expanded craft decoration" />
+		<Description value="Expanded craft decoration (a18)" />
 		<Author value="sLimLong" />
-		<Version value="0.0.8" />
+		<Version value="0.1.1" />
 	</ModInfo>
 </xml>
