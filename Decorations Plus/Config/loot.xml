@@ -4,4 +4,7 @@
 <append xpath="/lootcontainers/lootgroup [@name='perkBooks']">
 <item name="Book_Decorations_Plus"/>
 </append>
+<append xpath="/lootcontainers/lootgroup [@name='workingStiffs']">
+<item name="Book_Decorations_Plus"/>
+</append>
 </configs>
