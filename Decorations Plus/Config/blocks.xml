@@ -163,7 +163,6 @@
 	<property name="CloseSound" value="close_door_jail"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="RepairItems"> <property name="forgedSteel" value="12"/> </property>
-	<property name="UnlockedBy" value="perkAdvancedEngineering,High_Electrician_Book"/>
 	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
