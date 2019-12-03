@@ -19,7 +19,6 @@
 	<property name="HeatMapTime" value="1200"/>
 	<property name="HeatMapFrequency" value="25"/>
 	<property name="Stacknumber" value="1"/>
-	<property name="UnlockedBy" value="Book_Decorations_Plus"/>
 
 	<property class="Workstation">
 		<property name="Modules" value="output"/>		
@@ -148,6 +147,32 @@
 			<property name="EconomicValue" value="244"/>
 			<property name="SellableToTrader" value="false"/>
 		</block>
+<block name="jailDoor">
+	<property name="Class" value="DoorSecure"/>
+	<property name="Material" value="Msteel"/>
+	<property name="CustomIcon" value="jailDoorStatic" />
+	<property name="PassThroughDamage" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="Entities/Doors/jail_doorPrefab"/> <property name="ModelOffset" value="0,.5,0"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="OpenSound" value="open_door_jail"/>
+	<property name="CloseSound" value="close_door_jail"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="RepairItems"> <property name="forgedSteel" value="12"/> </property>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,High_Electrician_Book"/>
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+</block>		
 <append xpath="/blocks/block[@name='controlPanelBase01']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='controlPanelBase02']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='controlPanelBase03']"><property name="SellableToTrader" value="false"/></append>
