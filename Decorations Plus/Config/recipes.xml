@@ -1,6 +1,6 @@
 <configs>
         <append xpath="/recipes">
-<recipe name="Workbench_Decor" count="1" craft_area="Workbench" craft_time="25">
+<recipe name="Workbench_Decor" count="1" craft_area="workbench" craft_time="25">
 	<ingredient name="resourceForgedIron" count="25"/>
 	<ingredient name="resourceSpring" count="4"/>
 	<ingredient name="smallEngine" count="1"/>
