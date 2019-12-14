@@ -428,7 +428,7 @@
                 </recipe>
                 <recipe name="cntWallOven" count="1" craft_area="Workbench_Decor" craft_time="120">
                         <ingredient name="resourceForgedIron" count="35"/>
-                        <ingredient name="glassBusinessSheet" count="1"/>
+                        <ingredient name="glassBulletproofBlockVariantHelper" count="1"/>
                         <ingredient name="resourceScrapPolymers" count="10"/>
                         <ingredient name="resourceElectricParts" count="10"/>
                         <ingredient name="resourceMechanicalParts" count="2"/>
