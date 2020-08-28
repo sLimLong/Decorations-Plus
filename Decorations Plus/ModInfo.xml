@@ -2,8 +2,9 @@
 <xml>
 	<ModInfo>
 		<Name value="Decorations Plus" />
-		<Description value="Expanded craft decoration (a18)" />
+		<Description value="Expanded craft decoration (a19)" />
 		<Author value="sLimLong" />
-		<Version value="0.1.8" />
+		<Version value="0.2.0" />
+        <Website value="https://7daystodie.com.ru/"/>		
 	</ModInfo>
 </xml>

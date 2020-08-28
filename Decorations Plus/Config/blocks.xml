@@ -1,7 +1,7 @@
 <config>
 
 <append xpath="/blocks">
-<block name="Workbench_Decor">
+<block name="Workbench Decor">
     <property name="CustomIcon" value="workbench"/><property name="CustomIconTint" value="FFE300"/>
 	<property name="Class" value="Workstation"/>
 	<property name="Material" value="Mmetal"/>
@@ -9,25 +9,27 @@
 	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Crafting/workbenchPrefab"/>
-	<property name="DisplayType" value="blockMulti" />
+	<property name="ModelOffset" value=".5,.5,0"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,workbenchSchematic"/>
 	<property name="MultiBlockDim" value="2,2,1"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="HeatMapStrength" value="0.5"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
 	<property name="Stacknumber" value="1"/>
 
 	<property class="Workstation">
-		<property name="Modules" value="output"/>		
-		<property name="CraftingAreaRecipes" value="Workbench_Decor"/>
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="Workbench Decor"/>
 	</property>
-	<property name="WorkstationIcon" value="ui_game_symbol_workbench" />
-	<property name="OpenSound" value="open_workbench" />
-	<property name="CloseSound" value="close_workbench" />
-	<property name="WorkstationJournalTip" value="workbenchTip" />
+	<property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+	<property name="OpenSound" value="open_workbench"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property name="WorkstationJournalTip" value="workbenchTip"/>
 
 	<property class="RepairItems">
 		<property name="resourceForgedIron" value="25"/>
@@ -43,48 +45,57 @@
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
-	<property name="DescriptionKey" value="For crafting scenery"/>
-	<property name="EconomicValue" value="776"/>
-	<property name="Group" value="Basics,Building"/>
-	<property name="SellableToTrader" value="false"/>	
+	<property name="DescriptionKey" value="workbenchDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="Group" value="Building,advBuilding"/>
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
 	<property name="SortOrder1" value="70i0"/>
 </block>
 
-		<block name="Home Campfire Helper">
-			<property name="CreativeMode" value="None"/>
-			<property name="Class" value="Campfire"/>
-			<property name="Material" value="Mmetal"/>
-			<property name="Texture" value="191"/>
-			<property name="MaxDamage" value="400"/>
-			<property name="HeatMapStrength" value="1.5"/>
-			<property name="HeatMapTime" value="1200"/>
-			<property name="HeatMapFrequency" value="25"/>
-			<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
-			<property class="Workstation">
-				<property name="Modules" value="tools,output,fuel,input"/>
-				<property name="Collide" value="melee,bullet,arrow,rocket"/>
-				<property name="CraftingAreaRecipes" value="campfire"/>
-			</property>
-			<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
-			<property name="CraftActionName" value="lblContextActionCook"/>
-			<property name="CraftIcon" value="ui_game_symbol_spatula"/>
-			<property name="OpenSound" value="campfire_open"/>
-			<property name="CloseSound" value="campfire_close"/>
-			<property name="CraftSound" value="campfire_cook_click"/>
-			<property name="CraftCompleteSound" value="campfire_complete_item"/>
-			<property name="WorkstationJournalTip" value="campfireTip"/>
-			<property class="RepairItems">
-				<property name="resourceForgedIron" value="4"/>
-				<property name="resourceElectricParts" value="4"/>
-			</property>
-			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
-			<property name="DescriptionKey" value="campfireDesc"/>
-			<property name="SellableToTrader" value="false"/>
+	<block name="campfire_base">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Crafting/campfirePrefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="campfire"/>
+	<property name="ParticleOffset" value="0.5,0,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="DescriptionKey" value="campfireDesc"/>
+    <property name="SellableToTrader" value="false"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
 		</block>
 		
-		<block name="Home Woodstove">
-			<property name="Extends" value="Home Campfire Helper"/>
+		<block name="Woodstove">
+			<property name="Extends" value="campfire_base"/>
 			<property name="CustomIcon" value="cntStoveOldVer1Closed"/>
 			<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
 			<property name="Mesh" value="models"/>
@@ -95,17 +106,17 @@
 			<property name="SellableToTrader" value="false"/>
 		</block>
 		
-		<block name="Home Electric Oven">
-			<property name="Extends" value="Home Campfire Helper"/>
+		<block name="Electric Oven">
+			<property name="Extends" value="campfire_base"/>
 			<property name="CustomIcon" value="cntWallOven"/>
-			<property name="Texture" value="346,191,341,191,191,191"/>
+			<property name="Texture" value="346,345,341,345,345,345"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
 			<property name="EconomicValue" value="1444"/>
 			<property name="SellableToTrader" value="false"/>
 		</block>
 		
-		<block name="Home Gas Grill Open">
-			<property name="Extends" value="Home Campfire Helper"/>
+		<block name="Gas Grill Open">
+			<property name="Extends" value="campfire_base"/>
 			<property name="CustomIcon" value="cntGasGrillOpen"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#Entities/LootContainers?GasGrill_EmptyPrefab.prefab"/>
@@ -115,8 +126,8 @@
 			<property name="SellableToTrader" value="false"/>
 		</block>
 		
-		<block name="Home Gas Grill Closed">
-			<property name="Extends" value="Home Campfire Helper"/>
+		<block name="Gas Grill Closed">
+			<property name="Extends" value="campfire_base"/>
 			<property name="CustomIcon" value="cntGasGrillClosed"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#Entities/LootContainers?GasGrill_FullPrefab.prefab"/>
@@ -126,8 +137,8 @@
 			<property name="SellableToTrader" value="false"/>
 		</block>
 		
-		<block name="Home Charcoal Grill Open">
-			<property name="Extends" value="Home Campfire Helper"/>
+		<block name="Charcoal Grill Open">
+			<property name="Extends" value="campfire_base"/>
 			<property name="CustomIcon" value="cntCharcoalGrillOpen"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#Entities/LootContainers?Grill_Simple_EmptyPrefab.prefab"/>
@@ -137,8 +148,8 @@
 			<property name="SellableToTrader" value="false"/>
 		</block>
 		
-		<block name="Home Charcoal Grill Closed">
-			<property name="Extends" value="Home Campfire Helper"/>
+		<block name="Charcoal Grill Closed">
+			<property name="Extends" value="campfire_base"/>
 			<property name="CustomIcon" value="cntCharcoalGrillClosed"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#Entities/LootContainers?Grill_Simple_ClosedPrefab.prefab"/>
@@ -147,31 +158,9 @@
 			<property name="EconomicValue" value="244"/>
 			<property name="SellableToTrader" value="false"/>
 		</block>
-<block name="jailDoor">
-	<property name="Class" value="DoorSecure"/>
-	<property name="Material" value="Msteel"/>
-	<property name="CustomIcon" value="jailDoorStatic" />
-	<property name="PassThroughDamage" value="true"/>
-	<property name="Shape" value="ModelEntity"/>
-	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
-	<property name="Tag" value="Door"/>
-	<property name="Place" value="Door"/>
-	<property name="PlaceEverywhere" value="true"/>
-	<property name="Model" value="Entities/Doors/jail_doorPrefab"/> <property name="ModelOffset" value="0,.5,0"/>
-	<property name="ImposterExclude" value="true"/>
-	<property name="OpenSound" value="open_door_jail"/>
-	<property name="CloseSound" value="close_door_jail"/>
-	<property name="SellableToTrader" value="false"/>
-	<property class="RepairItems"> <property name="forgedSteel" value="12"/> </property>
-	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
-	<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Group" value="Building,advBuilding"/>
-	<property name="FilterTags" value="fdecor,fdoors"/>
-</block>		
+			
+</append>
+		
 <append xpath="/blocks/block[@name='controlPanelBase01']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='controlPanelBase02']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='controlPanelBase03']"><property name="SellableToTrader" value="false"/></append>
@@ -259,5 +248,5 @@
 <append xpath="/blocks/block[@name='decoCarTireStack']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='decoCowSkull']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='decoWildWestWagon']"><property name="SellableToTrader" value="false"/></append>						
-</append>				
+			
 </config>
