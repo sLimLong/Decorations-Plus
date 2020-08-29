@@ -452,7 +452,7 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Commercial/gunrackWallGunsBPrefab"/>
-	<property name="MultiBlockDim" value="2,1,1"/><property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/><property name="DisplayType" value="blockMulti"/>
 	<property name="ModelOffset" value=".5,.5,0"/>
 	<property name="DescriptionKey" value="cntStorageGenericDesc"/>
 	<property name="Tags" value="door"/>
@@ -469,7 +469,7 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Commercial/gunrackWallVestPrefab"/>
-	<property name="MultiBlockDim" value="2,1,1"/><property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/><property name="DisplayType" value="blockMulti"/>
 	<property name="ModelOffset" value=".5,.5,0"/>
 	<property name="DescriptionKey" value="cntStorageGenericDesc"/>
 	<property name="Tags" value="door"/>
@@ -486,7 +486,7 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Commercial/gunrackWallMagPrefab"/>
-	<property name="MultiBlockDim" value="2,1,1"/><property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/><property name="DisplayType" value="blockMulti"/>
 	<property name="ModelOffset" value=".5,.5,0"/>
 	<property name="DescriptionKey" value="cntStorageGenericDesc"/>
 	<property name="Tags" value="door"/>
