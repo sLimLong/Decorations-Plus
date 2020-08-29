@@ -1,6 +1,9 @@
 <config>
 
 <append xpath="/blocks">
+<!-- ================================ -->	
+<!-- Блоки Декор -->
+<!-- ================================ -->	
 <block name="Workbench Decor">
     <property name="CustomIcon" value="workbench"/><property name="CustomIconTint" value="FFE300"/>
 	<property name="Class" value="Workstation"/>
@@ -51,7 +54,9 @@
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
 	<property name="SortOrder1" value="70i0"/>
 </block>
-
+<!-- ================================ -->
+<!-- Печи -->
+<!-- ================================ -->	
 	<block name="campfire_base">
 	<property name="Class" value="Campfire"/>
 	<property name="Material" value="MstoneNoGlue"/>
@@ -158,9 +163,534 @@
 			<property name="EconomicValue" value="244"/>
 			<property name="SellableToTrader" value="false"/>
 		</block>
-			
+<!-- ================================ -->	
+<!-- Свет -->
+<!-- ================================ -->		
+		<block name="Ceiling Light">
+			<property name="CustomIcon" value="ceilingLight01"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="Light" value="1"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="MaxDamage" value="100"/>
+			<property name="Model" value="Entities/Lighting/player_ceilingLight01Prefab"/> 
+			<property name="HandleFace" value="Top"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="IsDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="Group" value="Science"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="3"/>
+			</property>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="FilterTags" value="fdecor,felectrical"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+
+		<block name="Ceiling Light 2">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="ceilingLight02"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight02Prefab"/>
+		</block>
+
+		<block name="Ceiling Light 2 Brass">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="ceilingLight02Brass"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight02BrassPrefab"/>
+		</block>
+
+		<block name="Ceiling Light 4">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="ceilingLight04"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight04Prefab"/>
+		</block>
+
+		<block name="Ceiling Light 5">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="ceilingLight05"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight05Prefab"/>
+		</block>
+
+		<block name="Ceiling Light 5 Brass">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="ceilingLight05Brass"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight05BrassPrefab"/>
+		</block>
+
+		<block name="Ceiling Light 7">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="ceilingLight07"/>
+			<property name="Model" value="Entities/Lighting/player_ceilingLight07Prefab"/> 
+		</block>
+
+		<block name="Ceiling Fan Light">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="ceilingFanLight"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="Entities/Lighting/ceiling_fanPrefab"/>
+		</block>
+
+		<block name="Wall Light">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="wallLight01"/>
+			<property name="Model" value="Entities/Lighting/wall_light01Prefab"/>
+			<property name="HandleFace" value="South"/>
+		</block>
+
+		<block name="Sconce Light">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="sconce1Light"/>
+			<property name="Model" value="Entities/Lighting/sconce_1_Prefab"/>
+			<property name="HandleFace" value="West"/>
+		</block>
+
+		<block name="Porch Light">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="porchLight01"/>
+			<property name="Model" value="Entities/Lighting/porchLight01Prefab"/>
+			<property name="HandleFace" value="West"/>
+		</block>
+
+		<block name="Porch Light 4">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="porchLight04"/>
+			<property name="Model" value="Entities/Lighting/porchLight04Prefab"/>
+			<property name="HandleFace" value="West"/>
+		</block>
+
+		<block name="Porch Light 4 Brass">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="porchLight04Brass"/>
+			<property name="Model" value="Entities/Lighting/porchLight04BrassPrefab"/>
+			<property name="HandleFace" value="West"/>
+		</block>
+
+		<block name="Desk Lamp">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="deskLampLight"/>
+			<property name="Model" value="Entities/Lighting/desk_lampPrefab"/>
+		</block>
+
+		<block name="Table Lamp">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="tableLampLight"/>
+			<property name="Model" value="Entities/Lighting/table_lampPrefab"/>
+		</block>
+
+		<block name="End Table Lamp">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="endTableLamp"/>
+			<property name="Model" value="Entities/Lighting/end_table_lightPrefab"/>
+			<property name="Path" value="solid"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		</block>
+
+		<block name="Street Light">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="streetLight01"/>
+			<property name="ImposterExchange" value="streetLightImposter"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Model" value="Entities/Lighting/street_light01Prefab"/>
+			<property name="RequiredPower" value="8"/>
+			<property name="OnlySimpleRotations" value="true"/>
+		</block>
+
+		<block name="Street Light Classic">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="streetLightClassic"/>
+			<property name="Model" value="Entities/Lighting/streetLamp_ClassicPrefab"/>
+			<property name="RequiredPower" value="8"/>
+			<property name="DisplayType" value="blockMulti" />
+			<property name="MultiBlockDim" value="1,5,1"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="ImposterExchange" value="imposterDontBlockCTRPole" param1="169"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+		</block>
+
+		<block name="Industrial Light">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="industrialLight01"/>
+			<property name="Model" value="Entities/Lighting/industrialLight01Prefab"/>
+			<property name="HandleFace" value="South"/>
+		</block>
+
+		<block name="Industrial Light 2">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="industrialLight02"/>
+			<property name="Model" value="Entities/Lighting/industrial_light_02Prefab"/>
+		</block>
+
+		<block name="Industrial Light 2 Red">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="industrialLight02Red"/>
+			<property name="Model" value="Entities/Lighting/industrial_light_02_redPrefab"/>
+		</block>
+
+		<block name="Open Sign">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="signShopOpenSwitch"/>
+			<property name="Model" value="Entities/Signs/sign_open_Prefab"/>
+			<property name="HandleFace" value="South"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="RequiredPower" value="2"/>
+		</block>
+
+		<block name="Exit Sign">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="signExitLight"/>
+			<property name="Model" value="Entities/Lighting/exit_signPrefab"/>
+			<property name="RequiredPower" value="2"/>
+		</block>
+
+		<block name="Work Light">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="workLightPOI"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Model" value="Entities/Lighting/work_lightPrefab"/>
+			<property name="DisplayType" value="blockMulti" />
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+		</block>
+<block name="Bookshelves">
+	<property name="Extends" value="parkBenchA" param1="EconomicBundleSize"/>
+	<property name="CustomIcon" value="cntBookShelfDoubleTopFull02"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntWoodFurnitureBlockVariantHelperDesc"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="cntBookShelfDoubleBottomFull01,cntBookShelfDoubleBottomFull02,cntBookShelfDoubleTopFull01,cntBookShelfDoubleTopFull02,cntBookShelfSingleBottomFull01,cntBookShelfSingleBottomFull02,cntBookShelfSingleTopFull01,cntBookShelfSingleTopFull02"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Building,advBuilding"/>
+</block>
+<block name="Clothes Hangers">
+	<property name="Extends" value="parkBenchA" param1="EconomicBundleSize"/>
+	<property name="CustomIcon" value="cntClothesRackRectanglePants"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntWoodFurnitureBlockVariantHelperDesc"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="cntClothesRackRectanglePants,cntClothesRackRectangleShirts,cntClothesRackRoundEmpty,cntClothesRackRoundPants,cntClothesRackRoundShirts,cntClothesRackWallTShirts,cntClothesRackWallPants,cntClothesRackWallLongSleeve,cntClothesShelfHalfJeans01,cntClothesShelfHalfJeans02,cntClothesShelfHalfShirts01,cntClothesShelfHalfShirts02,cntClothesShelfHalfSweaters01,cntClothesShelfStackJeans01,cntClothesShelfStackJeans02,cntClothesShelfStackShirts01,cntClothesShelfStackShirts02,decoMannequinFemale,decoMannequinFemaleBroken,decoMannequinMale,decoMannequinMaleBroken"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Building,advBuilding"/>
+</block>
+<block name="Barrel Gas Quad">
+    <property name="CustomIcon" value="cntBarrelGasQuadA"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Industrial/barrelGasQuadAPrefab"/>
+	<property name="DescriptionKey" value="cntStorageGenericDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="5"/>
+	<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+	<property name="Texture" value="572"/>
+	<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="cntStorageGenericInsecure"/>
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+<block name="Barrel Plastic Quad">
+    <property name="CustomIcon" value="cntBarrelGasQuadA"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Industrial/barrelPlasticQuadAPrefab"/>
+	<property name="DescriptionKey" value="cntStorageGenericDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="5"/>
+	<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+<block name="Ammo Piles Large">
+    <property name="CustomIcon" value="cntBarrelGasQuadA"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Entities/LootContainers?AmmoPiles_LargePrefab.prefab"/>
+	<property name="MultiBlockDim" value="2,1,1"/><property name="DisplayType" value="blockMulti"/>
+	<property name="ModelOffset" value=".5,.5,0"/>
+	<property name="DescriptionKey" value="cntStorageGenericDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="5"/>
+	<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+<block name="Gun Rack Wall">
+    <property name="CustomIcon" value="cntGunRackLargeGuns01"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Commercial/gunrackWallGunsAPrefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/><property name="DisplayType" value="blockMulti"/>
+	<property name="DescriptionKey" value="cntStorageGenericDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="5"/>
+	<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+<block name="Gun Rack Wall 2">
+    <property name="CustomIcon" value="cntGunRackLargeGuns01"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Commercial/gunrackWallGunsBPrefab"/>
+	<property name="MultiBlockDim" value="2,1,1"/><property name="DisplayType" value="blockMulti"/>
+	<property name="ModelOffset" value=".5,.5,0"/>
+	<property name="DescriptionKey" value="cntStorageGenericDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="5"/>
+	<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+<block name="Gun Rack Small Armor">
+    <property name="CustomIcon" value="cntGunRackSmallArmor"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Commercial/gunrackWallVestPrefab"/>
+	<property name="MultiBlockDim" value="2,1,1"/><property name="DisplayType" value="blockMulti"/>
+	<property name="ModelOffset" value=".5,.5,0"/>
+	<property name="DescriptionKey" value="cntStorageGenericDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="5"/>
+	<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+<block name="Gun Rack Small Magazines">
+    <property name="CustomIcon" value="cntGunRackSmallMagazines"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Commercial/gunrackWallMagPrefab"/>
+	<property name="MultiBlockDim" value="2,1,1"/><property name="DisplayType" value="blockMulti"/>
+	<property name="ModelOffset" value=".5,.5,0"/>
+	<property name="DescriptionKey" value="cntStorageGenericDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="5"/>
+	<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+<block name="Tool Box Closed">
+    <property name="CustomIcon" value="cntRollingToolBoxClosed"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Entities/LootContainers?rollingToolChestClosedPrefab.prefab"/>
+	<property name="DescriptionKey" value="cntStorageGenericDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="5"/>
+	<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+<block name="Shelves with junk">
+	<property name="Extends" value="parkBenchA" param1="EconomicBundleSize"/>
+	<property name="CustomIcon" value="cntStoreShelfDoubleBottomEmpty"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntWoodFurnitureBlockVariantHelperDesc"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="cntStoreShelfDoubleBottomEmpty,cntStoreShelfDoubleBottomFood01,cntStoreShelfDoubleBottomFood02,cntStoreShelfDoubleBottomHardware01,cntStoreShelfDoubleBottomHardware02,cntStoreShelfDoubleBottomHardware03Rags,cntStoreShelfDoubleBottomPharmaEmpty,cntStoreShelfDoubleBottomPharmaGoods01,cntStoreShelfDoubleBottomPharmaGoods02,cntStoreShelfDoubleBottomShoesEmpty,cntStoreShelfDoubleBottomShoesFull,cntStoreShelfDoubleBottomTrash01,cntStoreShelfDoubleBottomTrash02,cntStoreShelfDoubleTopEmpty,cntStoreShelfDoubleTopFood01,cntStoreShelfDoubleTopHardware01,cntStoreShelfDoubleTopHardware02Rags,cntStoreShelfDoubleTopShoesFull,cntStoreShelfDoubleTopTrash01,cntStoreShelfElectronicsDoubleBottomGoods01,cntStoreShelfElectronicsDoubleBottomGoods02,cntStoreShelfElectronicsDoubleBottomGoods03,cntStoreShelfElectronicsDoubleBottomGoods04,cntStoreShelfElectronicsSingleBottomElectronicsMonitor,cntStoreShelfElectronicsSingleBottomGoodsMisc,cntStoreShelfElectronicsSingleBottomHeadphones,cntStoreShelfElectronicsSingleBottomKeyboard,cntStoreShelfElectronicsSingleBottomLaptopClosed,cntStoreShelfElectronicsSingleBottomLaptopOpen,cntStoreShelfElectronicsSingleBottomPC,cntStoreShelfElectronicsSingleBottomSpeaker,cntStoreShelfSingleBottomFood01,cntStoreShelfSingleBottomFood02,cntStoreShelfSingleBottomHardware01,cntStoreShelfSingleBottomHardware02,cntStoreShelfSingleBottomPharmaGoods01,cntStoreShelfSingleBottomPharmaGoods02,cntStoreShelfSingleBottomShoesFull,cntStoreShelfSingleBottomTrash01,cntStoreShelfSingleBottomTrash02,cntStoreShelfSingleTopFood01,cntStoreShelfSingleTopHardware01,cntStoreShelfSingleTopHardware02,cntStoreShelfSingleTopShoesFull,cntStoreShelfSingleTopTrash01,cntStoreShelfSingleTopTrash02"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Building,advBuilding"/>
+</block>
+<block name="Pallet Bricks Storage">
+    <property name="CustomIcon" value="palletBricksBase"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/Industrial/pallet_bricks_basePrefab"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="57"/>
+	<property name="DescriptionKey" value="cntStorageGenericDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="5"/>
+	<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+<block name="Pallet White Bags Storage">
+    <property name="CustomIcon" value="palletWhiteBagsBase"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Industrial/pallet_bags_basePrefab"/>
+	<property name="DescriptionKey" value="cntStorageGenericDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="5"/>
+	<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+<block name="Pallet Brown Boxes Storage">
+    <property name="CustomIcon" value="palletBrownBoxesBase"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Industrial/pallet_boxes_basePrefab"/>
+	<property name="DescriptionKey" value="cntStorageGenericDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="5"/>
+	<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+<block name="Posters and Banners">
+	<property name="Extends" value="parkBenchA" param1="EconomicBundleSize"/>
+	<property name="CustomIcon" value="cntStoreShelfDoubleBottomEmpty"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntWoodFurnitureBlockVariantHelperDesc"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="signBathroomSignMenCeilingMount,signBathroomSignMenWallMount,signBathroomSignUnisexCeilingMount,signBathroomSignUnisexWallMount,signBathroomSignWomenCeilingMount,signBathroomSignWomenWallMount,signBookSaleAd,signBread01,signBread02,signBulletinBoard01,signBulletinBoard02,signCigaretteAd,signDinersMenu,signLaborDaySaleAd,signMegaCrushAd,signPillsLogoSmall,signPosterMovie2159,signPosterMovieLoneWolf,signPosterMovieMammasJustice,signPosterMovieSexualTension,signPosterMovieTheater2159,signPosterMovieTheaterLoneWolf,signPosterMovieTheaterMammasJustice,signPosterMovieTheaterSexualTension,signPosterWantedMissing01,signPosterWantedMissing02,signPosterWantedMissing03,signSafetyWorkProtection,signSale01,signSale02,signShamwaySale"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Building,advBuilding"/>
+    <property name="SellableToTrader" value="false"/>	
+</block>			
 </append>
-		
+<!-- ================================ -->
+<!-- Фиксы -->	
+<!-- ================================ -->	
+<!-- Запрет на продажу -->	
+
+<append xpath="/blocks/block[@name='signBathroomSignMenCeilingMount']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signBathroomSignMenWallMount']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signBathroomSignUnisexCeilingMount']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signBathroomSignUnisexWallMount']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signBathroomSignWomenCeilingMount']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signBathroomSignWomenWallMount']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signBookSaleAd']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signBread01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signBread02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signBulletinBoard01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signBulletinBoard02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signCigaretteAd']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signDinersMenu']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signLaborDaySaleAd']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signMegaCrushAd']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signPillsLogoSmall']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signPosterMovie2159']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signPosterMovieLoneWolf']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signPosterMovieMammasJustice']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signPosterMovieSexualTension']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signPosterMovieTheater2159']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signPosterMovieTheaterLoneWolf']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signPosterMovieTheaterMammasJustice']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signPosterMovieTheaterSexualTension']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signPosterWantedMissing01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signPosterWantedMissing02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signPosterWantedMissing03']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomFood01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomFood02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomHardware01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomHardware02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomHardware03Rags']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomPharmaEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomPharmaGoods01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomPharmaGoods02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomShoesEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomShoesFull']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomTrash01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomTrash02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleTopEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleTopFood01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleTopHardware01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleTopHardware02Rags']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleTopShoesFull']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleTopTrash01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsDoubleBottomGoods01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsDoubleBottomGoods02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsDoubleBottomGoods03']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsDoubleBottomGoods04']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomElectronicsMonitor']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomGoodsMisc']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomHeadphones']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomKeyboard']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomLaptopClosed']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomLaptopOpen']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomPC']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomSpeaker']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomFood01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomFood02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomHardware01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomHardware02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomPharmaGoods01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomPharmaGoods02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomShoesFull']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomTrash01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomTrash02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleTopFood01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleTopHardware01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleTopHardware02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleTopShoesFull']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleTopTrash01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleTopTrash02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesRackRectanglePants']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesRackRectangleShirts']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesRackRoundEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesRackRoundPants']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesRackRoundShirts']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesRackWallTShirts']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesRackWallPants']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesRackWallLongSleeve']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesShelfHalfJeans01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesShelfHalfJeans02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesShelfHalfShirts01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesShelfHalfShirts02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesShelfHalfSweaters01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesShelfStackJeans01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesShelfStackJeans02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesShelfStackShirts01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntClothesShelfStackShirts02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='decoMannequinFemale']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='decoMannequinFemaleBroken']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='decoMannequinMale']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='decoMannequinMaleBroken']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntBookShelfDoubleBottomFull01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntBookShelfDoubleBottomFull02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntBookShelfDoubleTopFull01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntBookShelfDoubleTopFull02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntBookShelfSingleBottomFull01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntBookShelfSingleBottomFull02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntBookShelfSingleTopFull01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntBookShelfSingleTopFull02']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='controlPanelBase01']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='controlPanelBase02']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='controlPanelBase03']"><property name="SellableToTrader" value="false"/></append>
@@ -248,5 +778,5 @@
 <append xpath="/blocks/block[@name='decoCarTireStack']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='decoCowSkull']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='decoWildWestWagon']"><property name="SellableToTrader" value="false"/></append>						
-			
+<!-- ================================ -->				
 </config>

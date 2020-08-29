@@ -1,10 +1,250 @@
+Update 0.2.1
+
+- Add Bloks:
+Posters and Banners
+Pallet Brown Boxes Storage
+Pallet White Bags Storage
+Pallet Bricks Storage
+Shelves with junk
+Tool Box Closed
+Gun Rack Small Magazines
+Gun Rack Small Armor
+Gun Rack Wall 2
+Gun Rack Wall
+Ammo Piles Large
+Barrel Plastic Quad
+Barrel Gas Quad
+Clothes Hangers
+Bookshelves
+Ceiling Light 2
+Ceiling Light 2 Brass
+Ceiling Light 4
+Ceiling Light 5
+Ceiling Light 5 Brass
+Ceiling Light 7
+Ceiling Fan Light
+Wall Light
+Sconce Light
+Porch Light
+Porch Light 4
+Porch Light 4 Brass
+Desk Lamp
+Table Lamp
+End Table Lamp
+Street Light
+Street Light Classic
+Industrial Light
+Industrial Light 2
+Industrial Light 2 Red
+Open Sign
+Exit Sign
+Work Light
+------------------------
+List blocks Decor:
+
+signBathroomSignMenCeilingMount
+signBathroomSignMenWallMount
+signBathroomSignUnisexCeilingMount
+signBathroomSignUnisexWallMount
+signBathroomSignWomenCeilingMount
+signBathroomSignWomenWallMount
+signBookSaleAd
+signBread01
+signBread02
+signBulletinBoard01
+signBulletinBoard02
+signCigaretteAd
+signDinersMenu
+signLaborDaySaleAd
+signMegaCrushAd
+signPillsLogoSmall
+signPosterMovie2159
+signPosterMovieLoneWolf
+signPosterMovieMammasJustice
+signPosterMovieSexualTension
+signPosterMovieTheater2159
+signPosterMovieTheaterLoneWolf
+signPosterMovieTheaterMammasJustice
+signPosterMovieTheaterSexualTension
+signPosterWantedMissing01
+signPosterWantedMissing02
+signPosterWantedMissing03
+cntStoreShelfDoubleBottomEmpty
+cntStoreShelfDoubleBottomFood01
+cntStoreShelfDoubleBottomFood02
+cntStoreShelfDoubleBottomHardware01
+cntStoreShelfDoubleBottomHardware02
+cntStoreShelfDoubleBottomHardware03Rags
+cntStoreShelfDoubleBottomPharmaEmpty
+cntStoreShelfDoubleBottomPharmaGoods01
+cntStoreShelfDoubleBottomPharmaGoods02
+cntStoreShelfDoubleBottomShoesEmpty
+cntStoreShelfDoubleBottomShoesFull
+cntStoreShelfDoubleBottomTrash01
+cntStoreShelfDoubleBottomTrash02
+cntStoreShelfDoubleTopEmpty
+cntStoreShelfDoubleTopFood01
+cntStoreShelfDoubleTopHardware01
+cntStoreShelfDoubleTopHardware02Rags
+cntStoreShelfDoubleTopShoesFull
+cntStoreShelfDoubleTopTrash01
+cntStoreShelfElectronicsDoubleBottomGoods01
+cntStoreShelfElectronicsDoubleBottomGoods02
+cntStoreShelfElectronicsDoubleBottomGoods03
+cntStoreShelfElectronicsDoubleBottomGoods04
+cntStoreShelfElectronicsSingleBottomElectronicsMonitor
+cntStoreShelfElectronicsSingleBottomGoodsMisc
+cntStoreShelfElectronicsSingleBottomHeadphones
+cntStoreShelfElectronicsSingleBottomKeyboard
+cntStoreShelfElectronicsSingleBottomLaptopClosed
+cntStoreShelfElectronicsSingleBottomLaptopOpen
+cntStoreShelfElectronicsSingleBottomPC
+cntStoreShelfElectronicsSingleBottomSpeaker
+cntStoreShelfSingleBottomFood01
+cntStoreShelfSingleBottomFood02
+cntStoreShelfSingleBottomHardware01
+cntStoreShelfSingleBottomHardware02
+cntStoreShelfSingleBottomPharmaGoods01
+cntStoreShelfSingleBottomPharmaGoods02
+cntStoreShelfSingleBottomShoesFull
+cntStoreShelfSingleBottomTrash01
+cntStoreShelfSingleBottomTrash02
+cntStoreShelfSingleTopFood01
+cntStoreShelfSingleTopHardware01
+cntStoreShelfSingleTopHardware02
+cntStoreShelfSingleTopShoesFull
+cntStoreShelfSingleTopTrash01
+cntStoreShelfSingleTopTrash02
+cntClothesRackRectanglePants
+cntClothesRackRectangleShirts
+cntClothesRackRoundEmpty
+cntClothesRackRoundPants
+cntClothesRackRoundShirts
+cntClothesRackWallTShirts
+cntClothesRackWallPants
+cntClothesRackWallLongSleeve
+cntClothesShelfHalfJeans01
+cntClothesShelfHalfJeans02
+cntClothesShelfHalfShirts01
+cntClothesShelfHalfShirts02
+cntClothesShelfHalfSweaters01
+cntClothesShelfStackJeans01
+cntClothesShelfStackJeans02
+cntClothesShelfStackShirts01
+cntClothesShelfStackShirts02
+decoMannequinFemale
+decoMannequinFemaleBroken
+decoMannequinMale
+decoMannequinMaleBroken
+cntBookShelfDoubleBottomFull01
+cntBookShelfDoubleBottomFull02
+cntBookShelfDoubleTopFull01
+cntBookShelfDoubleTopFull02
+cntBookShelfSingleBottomFull01
+cntBookShelfSingleBottomFull02
+cntBookShelfSingleTopFull01
+cntBookShelfSingleTopFull02
+controlPanelBase01
+controlPanelBase02
+controlPanelBase03
+controlPanelBase04
+controlPanelBase05
+controlPanelTop01
+controlPanelTop02
+controlPanelTop03
+controlPanelTop04
+controlPanelTop05
+commercialDoor1_v1
+commercialDoor2_v1
+commercialDoor4_v1
+houseFrontDoor1_v1
+houseFrontDoor2_v1
+concreteBarrier1
+securityGatePlate
+cntBathTubEmpty
+birdBathPlanter
+cntGasGrillOpen
+sandbagStraight01
+sandbagCorner01Short
+sandbagCorner02Long
+sandbagEnd00
+utilitySink
+palletEmpty
+cntWashingMachine
+cntRetroFridgeVer1Closed
+cntMicrowaveOvenVer1Closed
+decoBenchPress
+cntCupboardCabinetOldTopClosed
+radiatorHouse01
+decoMetalSlide
+decoSwingSet    
+gurneyBed
+hospitalBed
+airConditionVentFan
+palletWhiteBagsBase
+palletBricksBase
+palletBrownBoxesBase
+palletBlueTarpBase    
+metalPipeStraight
+metalPipeValve
+metalPipeCorner
+metalPipeJoint
+metalPipeCap
+metalPipeFlange
+pipeSmall1x1
+pipeSmall1x3
+pipeSmallBroke
+pipeSmallCap
+pipeSmallJoint
+pipeSmallValve
+pipeSmallCorner
+pipeSmallWall1x1
+pipeSmallWall1x3
+pipeSmallWallBroke
+pipeSmallWallCap
+pipeSmallWallJoint
+pipeSmallWallValve
+pipeSmallWallCorner
+pipeSmallWallCenterBridge                
+cntFridgeStainlessSteel
+cntCharcoalGrillClosed
+roadRailing    
+roadRailingPole    
+roadRailingEnd
+roadRailingEnd
+curtain_top1Sheet3
+curtain_bottom1Sheet3
+miniblindTopSheet    
+miniblindBottomSheet
+satelliteDish
+coffeeTable
+cntMedicineCabinetClosed
+cntFileCabinetShortClosed
+cntDumpster
+wallHungSink
+decoTreadmill
+decoStationaryBike
+cntHardenedChestSecure
+cntLootChestHero
+cntPillCaseClosed
+decoCarMotorFlipped
+decoCarTireStack
+decoCowSkull
+decoWildWestWagon
+signSafetyWorkProtection
+signSale01
+signSale02
+signShamwaySale
+
+----------------------------------
+
 Update 0.2.0
 
 - Removed recipe study book
 - Removed jaildoor recipe
 - Updata to a19
+
 ----------------------------------
 
 I am waiting for your suggestions on subjects. Maybe I'll add electrics and new blocks soon.
-
 Also in plans to create shelves and pallets chests
