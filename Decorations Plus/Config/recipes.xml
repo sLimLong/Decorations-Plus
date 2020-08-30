@@ -555,128 +555,128 @@
 <!-- ================================ -->		
 <!-- Свет -->
 <!-- ================================ -->	
-		<recipe name="Ceiling Light" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Ceiling Light" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Ceiling Light 2" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Ceiling Light 2" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Ceiling Light 2 Brass" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Ceiling Light 2 Brass" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapBrass" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Ceiling Light 4" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Ceiling Light 4" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Ceiling Light 5" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Ceiling Light 5" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Ceiling Light 5 Brass" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Ceiling Light 5 Brass" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapBrass" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Ceiling Light 7" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Ceiling Light 7" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Ceiling Fan Light" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Ceiling Fan Light" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceWood" count="10"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceMechanicalParts" count="5"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Wall Light" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Wall Light" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Sconce Light" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Sconce Light" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Porch Light" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Porch Light" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Porch Light 4" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Porch Light 4" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Porch Light 4 Brass" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Porch Light 4 Brass" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapBrass" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Desk Lamp" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Desk Lamp" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceMetalPipe" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Table Lamp" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Table Lamp" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceMetalPipe" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="End Table Lamp" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="End Table Lamp" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceWood" count="10"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceMetalPipe" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Street Light" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Street Light" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceForgedIron" count="30"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Street Light Classic" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Street Light Classic" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceForgedIron" count="30"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Industrial Light" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Industrial Light" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Industrial Light 2" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Industrial Light 2" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Industrial Light 2 Red" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Industrial Light 2 Red" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Open Sign" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Open Sign" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Exit Sign" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Exit Sign" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceScrapIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="1"/>
 			<ingredient name="resourceElectricParts" count="3"/>
 		</recipe>
-		<recipe name="Work Light" count="1" craft_area="Workbench Decor" tags="learnable">
+		<recipe name="Work Light" count="1" craft_area="Workbench Decor" >
 			<ingredient name="resourceForgedIron" count="5"/>
 			<ingredient name="resourceHeadlight" count="2"/>
 			<ingredient name="resourceMetalPipe" count="2"/>
