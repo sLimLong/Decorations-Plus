@@ -14,7 +14,6 @@
 	<property name="Model" value="Entities/Crafting/workbenchPrefab"/>
 	<property name="ModelOffset" value=".5,.5,0"/>
 	<property name="DisplayType" value="blockMulti"/>
-	<property name="UnlockedBy" value="perkAdvancedEngineering,workbenchSchematic"/>
 	<property name="MultiBlockDim" value="2,2,1"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
