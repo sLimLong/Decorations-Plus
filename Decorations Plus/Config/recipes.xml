@@ -167,7 +167,8 @@
                         <ingredient name="resourceMechanicalParts" count="15"/>					
                 </recipe>
                 <recipe name="radiatorHouse01" count="1" craft_area="Workbench Decor" craft_time="120">
-                        <ingredient name="resourceForgedIron" count="40"/>                       
+                        <ingredient name="resourceForgedIron" count="40"/>
+                        <ingredient name="resourceRadiator" count="1"/>						
                 </recipe>
                 <recipe name="decoMetalSlide" count="1" craft_area="Workbench Decor" craft_time="120">
                         <ingredient name="resourceForgedIron" count="100"/>
@@ -505,14 +506,14 @@
          </recipe>
         <recipe name="decoCarMotorFlipped" count="1"  craft_area="Workbench Decor" craft_time="120">
             <ingredient name="resourceForgedIron" count="120"/>
-            <ingredient name="resourceSpring" count="2"/>
+            <ingredient name="smallEngine" count="1"/>
 	        <ingredient name="resourceMechanicalParts" count="50"/>						
         </recipe>
         <recipe name="decoCarTireStack" count="1"  craft_area="Workbench Decor" craft_time="120">
             <ingredient name="resourceScrapPolymers" count="120"/>					
         </recipe>
         <recipe name="decoCowSkull" count="1"  craft_area="Workbench Decor" craft_time="120">
-            <ingredient name="resourceScrapPolymers" count="35"/>					
+            <ingredient name="resourceBone" count="15"/>					
         </recipe>
         <recipe name="decoWildWestWagon" count="1"  craft_area="Workbench Decor" craft_time="120">
             <ingredient name="resourceForgedIron" count="25"/>
@@ -690,7 +691,9 @@
 	        <ingredient name="resourceWood" count="10"/>			
         </recipe>
         <recipe name="Clothes Hangers" count="1"  craft_area="Workbench Decor" craft_time="120">
-            <ingredient name="resourceScrapPolymers" count="10"/>			
+            <ingredient name="resourceScrapPolymers" count="5"/>
+            <ingredient name="resourceScrapIron" count="10"/>
+            <ingredient name="resourceCloth" count="12"/>			
         </recipe>
         <recipe name="Barrel Gas Quad" count="1"  craft_area="Workbench Decor" craft_time="120">
             <ingredient name="resourceScrapPolymers" count="25"/>
