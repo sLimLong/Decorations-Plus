@@ -144,10 +144,10 @@
                         <ingredient name="resourceMechanicalParts" count="15"/>					
                 </recipe>
                 <recipe name="cntRetroFridgeVer1Closed" count="1"  craft_area="Workbench Decor" craft_time="2">
-                        <ingredient name="resourceForgedIron" count="35"/>
-                        <ingredient name="resourceSpring" count="4"/>
-                        <ingredient name="resourceElectricParts" count="20"/>
-                        <ingredient name="resourceMechanicalParts" count="20"/>					
+                        <ingredient name="resourceForgedIron" count="45"/>
+                        <ingredient name="resourceSpring" count="6"/>
+                        <ingredient name="resourceElectricParts" count="40"/>
+                        <ingredient name="resourceMechanicalParts" count="50"/>					
                 </recipe>
                 <recipe name="cntMicrowaveOvenVer1Closed" count="1"  craft_area="Workbench Decor" craft_time="2">
                         <ingredient name="resourceForgedIron" count="15"/>
@@ -167,8 +167,8 @@
                         <ingredient name="resourceMechanicalParts" count="15"/>					
                 </recipe>
                 <recipe name="radiatorHouse01" count="1" craft_area="Workbench Decor" craft_time="120">
-                        <ingredient name="resourceForgedIron" count="40"/>
-                        <ingredient name="resourceRadiator" count="1"/>						
+                        <ingredient name="resourceForgedIron" count="60"/>
+                        <ingredient name="resourceRadiator" count="2"/>						
                 </recipe>
                 <recipe name="decoMetalSlide" count="1" craft_area="Workbench Decor" craft_time="120">
                         <ingredient name="resourceForgedIron" count="100"/>
@@ -310,9 +310,9 @@
                 </recipe>
 				
                 <recipe name="cntFridgeStainlessSteel" count="1"  craft_area="Workbench Decor" craft_time="2">
-                        <ingredient name="resourceForgedIron" count="35"/>
-                        <ingredient name="resourceSpring" count="4"/>
-                        <ingredient name="resourceMechanicalParts" count="25"/>					
+                        <ingredient name="resourceForgedIron" count="55"/>
+                        <ingredient name="resourceSpring" count="6"/>
+                        <ingredient name="resourceMechanicalParts" count="40"/>					
                 </recipe>
                 <recipe name="cntCharcoalGrillClosed" count="1"  craft_area="Workbench Decor" craft_time="2">
                         <ingredient name="resourceForgedIron" count="35"/>
