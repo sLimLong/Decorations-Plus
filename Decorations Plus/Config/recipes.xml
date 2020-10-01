@@ -753,6 +753,87 @@
         </recipe>
         <recipe name="Posters and Banners" count="1"  craft_area="Workbench Decor" craft_time="120">
             <ingredient name="resourcePaper" count="35"/>				
+        </recipe>	
+        <recipe name="roadBarricadeLight" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceNail" count="5"/>
+	        <ingredient name="resourceWood" count="10"/>			
+        </recipe>	
+
+        <recipe name="cntMedicalPileSmall" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourcePaper" count="20"/>			
+        </recipe>
+        <recipe name="cntMedicalPileMedium" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourcePaper" count="20"/>			
+        </recipe>
+        <recipe name="cntMedicalPileLarge" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourcePaper" count="20"/>			
+        </recipe>
+        <recipe name="cntFoodPileSmall" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourcePaper" count="20"/>			
+        </recipe>
+        <recipe name="cntFoodPileMedium" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourcePaper" count="20"/>			
+        </recipe>
+        <recipe name="cntFoodPileLarge" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourcePaper" count="20"/>			
+        </recipe>
+        <recipe name="cntMedicLootPileB" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourcePaper" count="20"/>			
+        </recipe>
+        <recipe name="cntMedicLootPileA" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourcePaper" count="20"/>			
+        </recipe>
+        <recipe name="cntCashRegister" count="1"  craft_area="Workbench Decor" craft_time="120">
+             <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="35"/>			
+        </recipe>	
+        <recipe name="decoTableRound" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="35"/>
+        </recipe>	
+        <recipe name="signRoadStop" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="signRoadWork" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="signRoadSpeed25" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>		
+        <recipe name="signRoadSpeed35" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="signRoadSpeed45" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="signRoadSpeed55" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="signRoadSpeed65" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="signRoadSlow" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="signRoadRoughSurface" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="signInfoCenter" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="wallClock" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
         </recipe>		
 </append>
 </configs>

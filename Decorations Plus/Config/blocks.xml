@@ -61,8 +61,10 @@
 	<property name="Material" value="MstoneNoGlue"/>
 	<property name="MaxDamage" value="100"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
-	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="Entities/Crafting/campfirePrefab"/>
+	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Appliances/stove_old" param1="main_mesh"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="IsTerrainDecoration" value="true"/>
@@ -76,6 +78,7 @@
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
 
 	<property class="Workstation">
+	    <property name="CraftingAreaRecipes" value="campfire"/>
 		<property name="Modules" value="tools,output,fuel,input"/>
 		<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	</property>
@@ -93,7 +96,6 @@
 	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
 	<property name="DescriptionKey" value="campfireDesc"/>
     <property name="SellableToTrader" value="false"/>
-	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
 	<property name="SortOrder1" value="70i0"/>
 		</block>
@@ -516,7 +518,7 @@
 	<property name="DescriptionKey" value="cntWoodFurnitureBlockVariantHelperDesc"/>
 	<property name="ItemTypeIcon" value="all_blocks"/>
 	<property name="SelectAlternates" value="true"/>
-	<property name="PlaceAltBlockValue" value="cntStoreShelfDoubleBottomEmpty,cntStoreShelfDoubleBottomFood01,cntStoreShelfDoubleBottomFood02,cntStoreShelfDoubleBottomHardware01,cntStoreShelfDoubleBottomHardware02,cntStoreShelfDoubleBottomHardware03Rags,cntStoreShelfDoubleBottomPharmaEmpty,cntStoreShelfDoubleBottomPharmaGoods01,cntStoreShelfDoubleBottomPharmaGoods02,cntStoreShelfDoubleBottomShoesEmpty,cntStoreShelfDoubleBottomShoesFull,cntStoreShelfDoubleBottomTrash01,cntStoreShelfDoubleBottomTrash02,cntStoreShelfDoubleTopEmpty,cntStoreShelfDoubleTopFood01,cntStoreShelfDoubleTopHardware01,cntStoreShelfDoubleTopHardware02Rags,cntStoreShelfDoubleTopShoesFull,cntStoreShelfDoubleTopTrash01,cntStoreShelfElectronicsDoubleBottomGoods01,cntStoreShelfElectronicsDoubleBottomGoods02,cntStoreShelfElectronicsDoubleBottomGoods03,cntStoreShelfElectronicsDoubleBottomGoods04,cntStoreShelfElectronicsSingleBottomElectronicsMonitor,cntStoreShelfElectronicsSingleBottomGoodsMisc,cntStoreShelfElectronicsSingleBottomHeadphones,cntStoreShelfElectronicsSingleBottomKeyboard,cntStoreShelfElectronicsSingleBottomLaptopClosed,cntStoreShelfElectronicsSingleBottomLaptopOpen,cntStoreShelfElectronicsSingleBottomPC,cntStoreShelfElectronicsSingleBottomSpeaker,cntStoreShelfSingleBottomFood01,cntStoreShelfSingleBottomFood02,cntStoreShelfSingleBottomHardware01,cntStoreShelfSingleBottomHardware02,cntStoreShelfSingleBottomPharmaGoods01,cntStoreShelfSingleBottomPharmaGoods02,cntStoreShelfSingleBottomShoesFull,cntStoreShelfSingleBottomTrash01,cntStoreShelfSingleBottomTrash02,cntStoreShelfSingleTopFood01,cntStoreShelfSingleTopHardware01,cntStoreShelfSingleTopHardware02,cntStoreShelfSingleTopShoesFull,cntStoreShelfSingleTopTrash01,cntStoreShelfSingleTopTrash02"/>
+	<property name="PlaceAltBlockValue" value="cntStoreShelfDoubleBottomEmpty,cntStoreShelfDoubleBottomFood01,cntStoreShelfDoubleBottomFood02,cntStoreShelfDoubleBottomHardware01,cntStoreShelfDoubleBottomHardware02,cntStoreShelfDoubleBottomHardware03Rags,cntStoreShelfDoubleBottomPharmaEmpty,cntStoreShelfDoubleBottomPharmaGoods01,cntStoreShelfDoubleBottomPharmaGoods02,cntStoreShelfDoubleBottomShoesEmpty,cntStoreShelfDoubleBottomShoesFull,cntStoreShelfDoubleBottomTrash01,cntStoreShelfDoubleBottomTrash02,cntStoreShelfDoubleTopEmpty,cntStoreShelfDoubleTopFood01,cntStoreShelfDoubleTopHardware01,cntStoreShelfDoubleTopHardware02Rags,cntStoreShelfDoubleTopShoesFull,cntStoreShelfDoubleTopTrash01,cntStoreShelfElectronicsDoubleBottomGoods01,cntStoreShelfElectronicsDoubleBottomGoods02,cntStoreShelfElectronicsDoubleBottomGoods03,cntStoreShelfElectronicsDoubleBottomGoods04,cntStoreShelfElectronicsSingleBottomElectronicsMonitor,cntStoreShelfElectronicsSingleBottomGoodsMisc,cntStoreShelfElectronicsSingleBottomHeadphones,cntStoreShelfElectronicsSingleBottomKeyboard,cntStoreShelfElectronicsSingleBottomLaptopClosed,cntStoreShelfElectronicsSingleBottomLaptopOpen,cntStoreShelfElectronicsSingleBottomPC,cntStoreShelfElectronicsSingleBottomSpeaker,cntStoreShelfSingleBottomFood01,cntStoreShelfSingleBottomFood02,cntStoreShelfSingleBottomHardware01,cntStoreShelfSingleBottomHardware02,cntStoreShelfSingleBottomPharmaGoods01,cntStoreShelfSingleBottomPharmaGoods02,cntStoreShelfSingleBottomShoesFull,cntStoreShelfSingleBottomTrash01,cntStoreShelfSingleBottomTrash02,cntStoreShelfSingleTopFood01,cntStoreShelfSingleTopHardware01,cntStoreShelfSingleTopHardware02,cntStoreShelfSingleTopShoesFull,cntStoreShelfSingleTopTrash01,cntStoreShelfSingleTopTrash02,cntShoesPileBusinessShoes,cntShoesPileLeatherBoots,cntShoesPileSandals,cntShoesPileSneakers,cntShoesPileWomensHeels"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Group" value="Building,advBuilding"/>
 </block>
@@ -574,17 +576,52 @@
 	<property name="DescriptionKey" value="cntWoodFurnitureBlockVariantHelperDesc"/>
 	<property name="ItemTypeIcon" value="all_blocks"/>
 	<property name="SelectAlternates" value="true"/>
-	<property name="PlaceAltBlockValue" value="signBathroomSignMenCeilingMount,signBathroomSignMenWallMount,signBathroomSignUnisexCeilingMount,signBathroomSignUnisexWallMount,signBathroomSignWomenCeilingMount,signBathroomSignWomenWallMount,signBookSaleAd,signBread01,signBread02,signBulletinBoard01,signBulletinBoard02,signCigaretteAd,signDinersMenu,signLaborDaySaleAd,signMegaCrushAd,signPillsLogoSmall,signPosterMovie2159,signPosterMovieLoneWolf,signPosterMovieMammasJustice,signPosterMovieSexualTension,signPosterMovieTheater2159,signPosterMovieTheaterLoneWolf,signPosterMovieTheaterMammasJustice,signPosterMovieTheaterSexualTension,signPosterWantedMissing01,signPosterWantedMissing02,signPosterWantedMissing03,signSafetyWorkProtection,signSale01,signSale02,signShamwaySale"/>
+	<property name="PlaceAltBlockValue" value="signBathroomSignMenCeilingMount,signBathroomSignMenWallMount,signBathroomSignUnisexCeilingMount,signBathroomSignUnisexWallMount,signBathroomSignWomenCeilingMount,signBathroomSignWomenWallMount,signBookSaleAd,signBread01,signBread02,signBulletinBoard01,signBulletinBoard02,signCigaretteAd,signDinersMenu,signLaborDaySaleAd,signMegaCrushAd,signPillsLogoSmall,signPosterMovie2159,signPosterMovieLoneWolf,signPosterMovieMammasJustice,signPosterMovieSexualTension,signPosterMovieTheater2159,signPosterMovieTheaterLoneWolf,signPosterMovieTheaterMammasJustice,signPosterMovieTheaterSexualTension,signPosterWantedMissing01,signPosterWantedMissing02,signPosterWantedMissing03,signSafetyWorkProtection,signSale01,signSale02,signShamwaySale,paintingBen,paintingLorien,paintingDerek,paintingNoah,paintingDuke,paintingKen"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Group" value="Building,advBuilding"/>
     <property name="SellableToTrader" value="false"/>	
-</block>			
+</block>
+<block name="FlowerPot">
+	<property name="Extends" value="farmPlotBlock"/>
+	<property name="CustomIcon" value="farmPlotBlock"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CanMobsSpawnOn" value="false"/>
+	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="OutdoorDecor/bird_bath_planter" param1="main_mesh"/>
+	<drop event="Harvest" name="resourceClayLump" count="0" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="0" tag="oreWoodHarvest"/>
+	<property name="SellableToTrader" value="false"/>
+</block>
+	<append xpath="/blocks/block[@name='woodFrameBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,woodHalfRampStairs50,woodHalfRampStairs50Filler,woodPoleSCTR,woodBlockBaseboard4,woodGablePyramid,woodLogPillar100,woodBlockBaseboardChairRail1,woodPoleCornerRound,woodGableInvertedSteepHalf,woodWedgeTipHalf1,woodWedgeTipHalf2,woodInclineTipHalf1,woodInclineTipHalf2,woodRampInclineOutsideCNR,woodRampInclineOutsideCNRFiller,woodRampInclineInsideCNR,woodRampInclineInsideCNRFiller,woodRampInclineHalf1,woodRampInclineHalf2,woodRampInclineFillerHalf1,woodRampInclineFillerHalf2,woodCNRRound,woodCNRRoundTop,woodCNRRamp,woodHalfInsideCorner,woodQuarterCNRQuarterPlate,woodGable,woodGable1m,woodGablehalf,woodGablequarterhalf,woodGable1mhalf,woodGable3quarterhalf,woodGableInvertedRampHalf,woodPoleSupportCtr,woodPoleSupport,woodCrossCtr,woodCross,woodCross3x1,woodCrossHalf,woodPoleSupport2,woodWedgeInclineCornerTop,woodGable3Quarter,woodHalfCentered,woodWindowArch3MCNR,woodWindowArch3MCTR,woodWindowArch3MTip,woodGableInvertedQuarterHalf,woodHalfPlate,woodFloorJoist,woodWallStudBroken,woodBlockBaseboardChairRail4,woodWallStud,woodPyramid1m,woodBlockBaseboard1,woodFramePlateOffset,woodPlateOffset,woodBlockTileBroken01,woodCNRIncline,woodHalfCNRInside2,woodWedgeNarrowTip,woodWedgeNarrowLow,woodWedgeNarrowMid,woodWedgeNarrowHigh,woodPlateHalfTriangle,woodPlateQuarterTriangle,wood2PlateCorner,wood2PlateCornerHalf,woodPlatePole,woodEighth,woodPyramid,woodSawhorse,woodRampTrimQuarter,woodBlockTrimHalfSplit,woodBlockTrimHalfSplitDiagonal,woodBlockTrimHalfSplit4Sided,woodBlockTrimQuarterEdge,woodBlockTrimQuarterEdge2Sided,woodBlockTrimQuarterCornerInside,woodBlockTrimQuarterCornerInsideTriangle,woodBlockTrimQuarterCornerOutside,woodBlockTrimQuarterCornerOutside2Sided,woodBlockTrimCNRRound,woodHalfTrimSplit,woodWedgeRampLeftIntersection,woodWedgeRampRightIntersection,woodWedgeSteepWedgeLeftIntersection,woodWedgeSteepWedgeRightIntersection,woodWedgeSteepTipLeftIntersection,woodWedgeSteepTipRightIntersection,woodWedgeTipRampLeftIntersection,woodWedgeTipRampRightIntersection,woodWedgeTipSteepWedgeLeftIntersection,woodWedgeTipSteepWedgeRightIntersection,woodWedgeTipSteepTipLeftIntersection,woodWedgeTipSteepTipRightIntersection,woodPlateCounterSinkHole,woodPlateCounterSink,woodCrown,woodCrownInsideCorner,woodWindowTrim,woodWindowTrimBottom,woodWindowTrimTop,woodWindowTrimSides,woodWindowTrimTopFancy,plywoodOsbCTRPlate,woodBarricadeCTRPlate,woodBarricade2CTRPlate,woodHalf3Quarter,woodCrown,woodCrownInsideCorner,woodWindowTrimTopFancy,woodWindowTrimTop,woodWindowTrimSides,woodWindowTrimBottom,woodWindowTrim</append>			
 </append>
 <!-- ================================ -->
 <!-- Фиксы -->	
 <!-- ================================ -->	
-<!-- Запрет на продажу -->	
-
+<!-- Запрет на продажу -->
+<append xpath="/blocks/block[@name='wallClock']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='decoTableRound']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signRoadStop']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signRoadWork']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signRoadSpeed25']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signRoadSpeed35']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signRoadSpeed45']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signRoadSpeed55']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='ignRoadSpeed65']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signRoadSlow']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signRoadRoughSurface']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signInfoCenter']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='roadBarricadeLight']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntMedicalPileSmall']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntMedicalPileMedium']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntMedicalPileLarge']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntFoodPileSmall']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntFoodPileMedium']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntFoodPileLarge']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntMedicLootPileB']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntMedicLootPileA']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntCashRegister']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='signBathroomSignMenCeilingMount']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='signBathroomSignMenWallMount']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='signBathroomSignUnisexCeilingMount']"><property name="SellableToTrader" value="false"/></append>
