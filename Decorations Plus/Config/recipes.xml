@@ -834,7 +834,15 @@
         <recipe name="wallClock" count="1"  craft_area="Workbench Decor" craft_time="120">
             <ingredient name="resourceScrapPolymers" count="25"/>
 			<ingredient name="resourceScrapIron" count="50"/>
-        </recipe>		
+        </recipe>
+        <recipe name="cntAmmoPileMedium" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="cntAmmoPileSmall" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>			
 </append>
 </configs>
 

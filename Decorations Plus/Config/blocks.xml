@@ -600,6 +600,8 @@
 <!-- Фиксы -->	
 <!-- ================================ -->	
 <!-- Запрет на продажу -->
+<append xpath="/blocks/block[@name='cntAmmoPileMedium']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntAmmoPileSmall']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='wallClock']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='decoTableRound']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='signRoadStop']"><property name="SellableToTrader" value="false"/></append>
@@ -608,7 +610,7 @@
 <append xpath="/blocks/block[@name='signRoadSpeed35']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='signRoadSpeed45']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='signRoadSpeed55']"><property name="SellableToTrader" value="false"/></append>
-<append xpath="/blocks/block[@name='ignRoadSpeed65']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='signRoadSpeed65']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='signRoadSlow']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='signRoadRoughSurface']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='signInfoCenter']"><property name="SellableToTrader" value="false"/></append>
