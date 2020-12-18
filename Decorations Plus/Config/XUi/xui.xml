@@ -7,7 +7,7 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>	
-<window_group name="workstation_Woodstove" controller="XUiC_WorkstationWindowGroup">
+		<window_group name="workstation_Woodstove" controller="XUiC_WorkstationWindowGroup">
 				<window name="windowCraftingList"/>
 				<window name="craftingInfoPanel"/>
 				<window name="windowCraftingQueue"/>
@@ -17,6 +17,15 @@
 				<window name="windowNonPagingHeader" />
 		</window_group>
 		<window_group name="workstation_Electric Oven" controller="XUiC_WorkstationWindowGroup">
+				<window name="windowCraftingList"/>
+				<window name="craftingInfoPanel"/>
+				<window name="windowCraftingQueue"/>
+				<window name="windowToolsCampfire" />
+				<window name="windowFuel" />
+				<window name="windowOutput" />
+				<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_Microwave Oven" controller="XUiC_WorkstationWindowGroup">
 				<window name="windowCraftingList"/>
 				<window name="craftingInfoPanel"/>
 				<window name="windowCraftingQueue"/>

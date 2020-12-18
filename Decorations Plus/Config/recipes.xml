@@ -533,6 +533,11 @@
 			<ingredient name="resourceElectricParts" count="8"/>
 			<ingredient name="cntWallOven" count="1"/>
 		</recipe>
+		<recipe name="Microwave Oven" count="1" craft_area="Workbench Decor">
+			<ingredient name="resourceScrapIron" count="80"/>
+			<ingredient name="resourceElectricParts" count="6"/>
+			<ingredient name="cntMicrowaveOvenVer1Closed" count="1"/>
+		</recipe>
 		<recipe name="Gas Grill Open" count="1" craft_area="Workbench Decor">
 			<ingredient name="resourceScrapIron" count="80"/>
 			<ingredient name="resourceMechanicalParts" count="6"/>
