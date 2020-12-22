@@ -129,8 +129,6 @@
 			<property name="Place" value="TowardsPlacerInverted"/>
 			<property name="OpenSound" value="open_fridge"/>
 			<property name="CloseSound" value="close_fridge"/>
-			<property name="CraftSound" value="solarpanel_on"/>
-			<property name="CraftCompleteSound" value="solarpanel_off"/>
 			<property name="ParticleName" value="candle_flame"/>
 			<property name="ParticleOffset" value="0.5,0,0.5"/>
 			<property name="EconomicValue" value="444"/>
