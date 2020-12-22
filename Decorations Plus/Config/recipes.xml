@@ -858,6 +858,31 @@
 		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="foodRottingFlesh,resourcePotassiumNitratePowder,resourceClayLump"/>
 	</effect_group>
 </recipe>		
+
+	<recipe name="decoHoistChain" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering" craft_tool="toolForgeCrucible">
+		<ingredient name="unit_iron" count="20"/>
+		<ingredient name="unit_clay" count="10"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="unit_clay,unit_iron"/>
+		</effect_group>
+	</recipe>
+	<recipe name="decoHoistSpreader" count="1" craft_area="Workbench Decor" craft_time="30">
+		<ingredient name="resourceForgedSteel" count="4"/>
+		<ingredient name="resourceMechanicalParts" count="8"/>
+	</recipe>
+	<recipe name="decoHoistHook" count="1" craft_area="Workbench Decor" craft_time="30">
+		<ingredient name="resourceForgedSteel" count="2"/>
+		<ingredient name="resourceMechanicalParts" count="4"/>
+	</recipe>
+	<recipe name="decoHoistMagnet" count="1" craft_area="Workbench Decor" craft_time="30">
+		<ingredient name="resourceForgedSteel" count="4"/>
+		<ingredient name="resourceElectricParts" count="5"/>
+		<ingredient name="resourceMechanicalParts" count="4"/>
+	</recipe>
+	<recipe name="decoHoistTopMount" count="1" craft_area="Workbench Decor" craft_time="30">
+		<ingredient name="resourceForgedSteel" count="2"/>
+		<ingredient name="resourceMechanicalParts" count="4"/>
+	</recipe>
 </append>
 </configs>
 
