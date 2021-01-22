@@ -843,16 +843,13 @@
             <ingredient name="resourceScrapPolymers" count="25"/>
 			<ingredient name="resourceScrapIron" count="50"/>
         </recipe>	
-<recipe name="farmPlotBlockPlayer" count="1" tags="perkLivingOffTheLandCrafting" craft_area="Workbench Decor" craft_time="20">
-	<ingredient name="resourceWood" count="4"/>
-	<ingredient name="foodRottingFlesh" count="10"/>
-	<ingredient name="resourcePotassiumNitratePowder" count="25"/>
-	<ingredient name="resourceClayLump" count="100"/>
-	<ingredient name="birdBathPlanter" count="1"/>
-	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="foodRottingFlesh,resourcePotassiumNitratePowder,resourceClayLump"/>
-	</effect_group>
-</recipe>		
+        <recipe name="FlowerPot" count="1" craft_area="Workbench Decor" craft_time="20">
+			<ingredient name="resourceWood" count="4"/>
+			<ingredient name="foodRottingFlesh" count="10"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="25"/>
+			<ingredient name="resourceClayLump" count="100"/>
+			<ingredient name="birdBathPlanter" count="1"/>
+        </recipe>		
 </append>
 </configs>
 
