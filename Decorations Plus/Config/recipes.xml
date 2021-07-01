@@ -842,14 +842,401 @@
         <recipe name="cntAmmoPileSmall" count="1"  craft_area="Workbench Decor" craft_time="120">
             <ingredient name="resourceScrapPolymers" count="25"/>
 			<ingredient name="resourceScrapIron" count="50"/>
-        </recipe>	
-        <recipe name="FlowerPot" count="1" craft_area="Workbench Decor" craft_time="20">
-			<ingredient name="resourceWood" count="4"/>
-			<ingredient name="foodRottingFlesh" count="10"/>
-			<ingredient name="resourcePotassiumNitratePowder" count="25"/>
-			<ingredient name="resourceClayLump" count="100"/>
-			<ingredient name="birdBathPlanter" count="1"/>
         </recipe>		
+<recipe name="FlowerPot" count="1" craft_area="Workbench Decor" craft_time="20">
+	<ingredient name="resourceWood" count="4"/>
+	<ingredient name="foodRottingFlesh" count="10"/>
+	<ingredient name="resourcePotassiumNitratePowder" count="25"/>
+	<ingredient name="resourceClayLump" count="100"/>
+	<ingredient name="birdBathPlanter" count="1"/>
+</recipe>
+		<recipe name="Wireless Relay" count="1" craft_area="Workbench Decor" craft_time="120">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+
+		<recipe name="Wireless Switch Fusebox" count="1" craft_area="Workbench Decor" craft_time="120" >
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+		</recipe>
+
+		<recipe name="Wireless Switch Electrical Box" count="1" craft_area="Workbench Decor" craft_time="120" >
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+		</recipe>
+<!-- Новое 01.07.21 -->		
+        <recipe name="cntCoffinWildWestOpen" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceNail" count="5"/>
+	        <ingredient name="resourceWood" count="25"/>				
+        </recipe>
+        <recipe name="cntCoffinWildWestClosed" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceNail" count="5"/>
+	        <ingredient name="resourceWood" count="25"/>				
+        </recipe>
+        <recipe name="cntCoffinWildWestCracked" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceNail" count="5"/>
+	        <ingredient name="resourceWood" count="25"/>				
+        </recipe>
+        <recipe name="cntCoffinWildWestStack" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceNail" count="5"/>
+	        <ingredient name="resourceWood" count="25"/>				
+        </recipe>
+        <recipe name="cntCoffinWildWestLeaning" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceNail" count="5"/>
+	        <ingredient name="resourceWood" count="25"/>				
+        </recipe>
+        <recipe name="cntCoffinWildWestLidLeaning" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceNail" count="5"/>
+	        <ingredient name="resourceWood" count="25"/>				
+        </recipe>
+        <recipe name="hayBaleRound" count="1"  craft_area="Workbench Decor" craft_time="120">
+	        <ingredient name="resourceYuccaFibers" count="25"/>				
+        </recipe>
+        <recipe name="hayBaleSquare" count="1"  craft_area="Workbench Decor" craft_time="120">
+	        <ingredient name="resourceYuccaFibers" count="25"/>				
+        </recipe>
+        <recipe name="cntDisplayCaseAmmoLeftBroken" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="cntDisplayCaseAmmoMiddleBroken01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="cntDisplayCaseAmmoMiddleBroken02" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="cntDisplayCaseAmmoRightBroken" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="cntDisplayCaseAmmoRightBroken" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+
+        <recipe name="cntFreezerGroceriesMiddleFullClosed" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="cntFreezerGroceriesMiddleFullClosed2" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+        <recipe name="cntFreezerGroceriesMiddleFullClosedBroken" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+        <recipe name="cntFreezerGroceriesMiddleFullClosedBroken2" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+
+        <recipe name="cntShoesPileBusinessShoes" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceCloth" count="25"/>
+        </recipe>
+        <recipe name="cntShoesPileCommercial01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceCloth" count="25"/>
+        </recipe>	
+        <recipe name="cntShoesPileCommercial02" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceCloth" count="25"/>
+        </recipe>
+
+        <recipe name="cntShoesPileLeatherBoots" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceCloth" count="25"/>
+        </recipe>
+        <recipe name="cntShoesPileSandals" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceCloth" count="25"/>
+        </recipe>	
+        <recipe name="cntShoesPileSneakers" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceCloth" count="25"/>
+        </recipe>
+        <recipe name="cntShoesPileWomensHeels" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceCloth" count="25"/>
+        </recipe>
+
+<recipe name="cntStoreProduceBasketApples1" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreProduceBasketApples2" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreProduceBasketCornerEmpty1" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreProduceBasketCornerEmpty2" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreProduceBasketEmpty1" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreProduceBasketEmpty2" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreProduceBasketGourds1" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreProduceBasketGourds2" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreProduceBasketlettuce1" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreProduceBasketLettuce2" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreProduceBasketMelons1" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreProduceBasketMelons2" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleBottomEmpty" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleBottomFood01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleBottomFood02" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleBottomHardware01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleBottomHardware02" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleBottomHardware03Rags" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleBottomPharmaEmpty" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleBottomPharmaGoods01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleBottomPharmaGoods02" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleBottomShoesEmpty" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleBottomShoesFull" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleBottomTrash01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleBottomTrash02" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleTopEmpty" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleTopFood01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleTopHardware01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleTopHardware02Rags" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleTopShoesEmpty" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleTopShoesFull" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfDoubleTopTrash01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsDoubleBottomEmpty" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsDoubleBottomGoods01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsDoubleBottomGoods02" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsDoubleBottomGoods03" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsDoubleBottomGoods04" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsDoubleTopEmpty" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsSingleBottomElectronicsMonitor" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsSingleBottomEmpty" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsSingleBottomGoodsMisc" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsSingleBottomHeadphones" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsSingleBottomKeyboard" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsSingleBottomLaptopClosed" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsSingleBottomLaptopOpen" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsSingleBottomPC" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsSingleBottomSpeaker" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfElectronicsSingleTopEmpty" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleBottomEmpty" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleBottomFood01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleBottomFood02" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleBottomHardware01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleBottomHardware02" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleBottomPharmaEmpty" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleBottomPharmaGoods01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleBottomPharmaGoods02" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleBottomShoesEmpty" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleBottomShoesFull" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleBottomTrash01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleBottomTrash02" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleTopEmpty" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleTopFood01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleTopHardware01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleTopHardware02" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleTopShoesEmpty" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleTopShoesFull" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleTopTrash01" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>	
+<recipe name="cntStoreShelfSingleTopTrash02" count="1"  craft_area="Workbench Decor" craft_time="120">
+            <ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+        </recipe>			
 </append>
 </configs>
 

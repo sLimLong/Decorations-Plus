@@ -593,13 +593,148 @@
 	<drop event="Harvest" name="resourceClayLump" count="0" tag="oreWoodHarvest"/>
 	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="0" tag="oreWoodHarvest"/>
 	<property name="SellableToTrader" value="false"/>
-</block>			
+</block>
+		<block name="Wireless Relay">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="controlPanelTop02"/> <property name="CustomIconTint" value="#e69500"/>
+			<property name="Class" value="Powered"/>
+			<property name="Texture" value="519,519,519,519,519,519"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="1000"/>
+			<property class="RepairItems"> <property name="resourceElectricParts" value="2"/> </property>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="RequiredPower" value="1"/>
+			<property name="Group" value="Science"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="EconomicValue" value="44"/>
+			<property name="DescriptionKey" value="electricwirerelayDesc"/>
+			<property name="FilterTags" value="fdecor,felectrical"/>
+            <property name="SellableToTrader" value="false"/>			
+		</block>
+		<block name="Wireless Switch Fusebox">
+			<property name="Extends" value="Wireless Relay"/>
+			<property name="CustomIcon" value="fusebox"/>
+			<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/fusebox" param1="main_mesh"/> <property name="HandleFace" value="South"/>
+			<property name="Class" value="Switch"/>
+			<property name="TriggerType" value="Switch"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="DescriptionKey" value="switchDesc"/>
+            <property name="SellableToTrader" value="false"/>			
+		</block>
+
+		<block name="Wireless Switch Electrical Box">
+			<property name="Extends" value="Wireless Relay"/>
+			<property name="CustomIcon" value="electricalBox01"/>
+			<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/electrical_box01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
+			<property name="Class" value="Switch"/>
+			<property name="TriggerType" value="Switch"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="DescriptionKey" value="switchDesc"/>
+            <property name="SellableToTrader" value="false"/>			
+		</block>		
 </append>
 	<append xpath="/blocks/block[@name='woodFrameBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,woodHalfRampStairs50,woodHalfRampStairs50Filler,woodPoleSCTR,woodBlockBaseboard4,woodGablePyramid,woodLogPillar100,woodBlockBaseboardChairRail1,woodPoleCornerRound,woodGableInvertedSteepHalf,woodWedgeTipHalf1,woodWedgeTipHalf2,woodInclineTipHalf1,woodInclineTipHalf2,woodRampInclineOutsideCNR,woodRampInclineOutsideCNRFiller,woodRampInclineInsideCNR,woodRampInclineInsideCNRFiller,woodRampInclineHalf1,woodRampInclineHalf2,woodRampInclineFillerHalf1,woodRampInclineFillerHalf2,woodCNRRound,woodCNRRoundTop,woodCNRRamp,woodHalfInsideCorner,woodQuarterCNRQuarterPlate,woodGable,woodGable1m,woodGablehalf,woodGablequarterhalf,woodGable1mhalf,woodGable3quarterhalf,woodGableInvertedRampHalf,woodPoleSupportCtr,woodPoleSupport,woodCrossCtr,woodCross,woodCross3x1,woodCrossHalf,woodPoleSupport2,woodWedgeInclineCornerTop,woodGable3Quarter,woodHalfCentered,woodWindowArch3MCNR,woodWindowArch3MCTR,woodWindowArch3MTip,woodGableInvertedQuarterHalf,woodHalfPlate,woodFloorJoist,woodWallStudBroken,woodBlockBaseboardChairRail4,woodWallStud,woodPyramid1m,woodBlockBaseboard1,woodFramePlateOffset,woodPlateOffset,woodBlockTileBroken01,woodCNRIncline,woodHalfCNRInside2,woodWedgeNarrowTip,woodWedgeNarrowLow,woodWedgeNarrowMid,woodWedgeNarrowHigh,woodPlateHalfTriangle,woodPlateQuarterTriangle,wood2PlateCorner,wood2PlateCornerHalf,woodPlatePole,woodEighth,woodPyramid,woodSawhorse,woodRampTrimQuarter,woodBlockTrimHalfSplit,woodBlockTrimHalfSplitDiagonal,woodBlockTrimHalfSplit4Sided,woodBlockTrimQuarterEdge,woodBlockTrimQuarterEdge2Sided,woodBlockTrimQuarterCornerInside,woodBlockTrimQuarterCornerInsideTriangle,woodBlockTrimQuarterCornerOutside,woodBlockTrimQuarterCornerOutside2Sided,woodBlockTrimCNRRound,woodHalfTrimSplit,woodWedgeRampLeftIntersection,woodWedgeRampRightIntersection,woodWedgeSteepWedgeLeftIntersection,woodWedgeSteepWedgeRightIntersection,woodWedgeSteepTipLeftIntersection,woodWedgeSteepTipRightIntersection,woodWedgeTipRampLeftIntersection,woodWedgeTipRampRightIntersection,woodWedgeTipSteepWedgeLeftIntersection,woodWedgeTipSteepWedgeRightIntersection,woodWedgeTipSteepTipLeftIntersection,woodWedgeTipSteepTipRightIntersection,woodPlateCounterSinkHole,woodPlateCounterSink,woodCrown,woodCrownInsideCorner,woodWindowTrim,woodWindowTrimBottom,woodWindowTrimTop,woodWindowTrimSides,woodWindowTrimTopFancy,plywoodOsbCTRPlate,woodBarricadeCTRPlate,woodBarricade2CTRPlate,woodHalf3Quarter,woodCrown,woodCrownInsideCorner,woodWindowTrimTopFancy,woodWindowTrimTop,woodWindowTrimSides,woodWindowTrimBottom,woodWindowTrim</append>
 <!-- ================================ -->
 <!-- Фиксы -->	
 <!-- ================================ -->	
 <!-- Запрет на продажу -->
+<append xpath="/blocks/block[@name='cntStoreProduceBasketApples1']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreProduceBasketApples2']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreProduceBasketCornerEmpty1']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreProduceBasketCornerEmpty2']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreProduceBasketEmpty1']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreProduceBasketEmpty2']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreProduceBasketGourds1']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreProduceBasketGourds2']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreProduceBasketlettuce1']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreProduceBasketLettuce2']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreProduceBasketMelons1']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreProduceBasketMelons2']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomFood01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomFood02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomHardware01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomHardware02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomHardware03Rags']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomPharmaEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomPharmaGoods01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomPharmaGoods02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomShoesEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomShoesFull']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomTrash01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleBottomTrash02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleTopEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleTopFood01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleTopHardware01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleTopHardware02Rags']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleTopShoesEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleTopShoesFull']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfDoubleTopTrash01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsDoubleBottomEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsDoubleBottomGoods01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsDoubleBottomGoods02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsDoubleBottomGoods03']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsDoubleBottomGoods04']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsDoubleTopEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomElectronicsMonitor']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomGoodsMisc']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomHeadphones']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomKeyboard']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomLaptopClosed']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomLaptopOpen']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomPC']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleBottomSpeaker']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfElectronicsSingleTopEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomFood01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomFood02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomHardware01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomHardware02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomPharmaEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomPharmaGoods01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomPharmaGoods02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomShoesEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomShoesFull']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomTrash01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleBottomTrash02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleTopEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleTopFood01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleTopHardware01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleTopHardware02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleTopShoesEmpty']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleTopShoesFull']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleTopTrash01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntStoreShelfSingleTopTrash02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntCoffinWildWestOpen']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntCoffinWildWestClosed']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntCoffinWildWestCracked']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntCoffinWildWestStack']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntCoffinWildWestLeaning']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntCoffinWildWestLidLeaning']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='hayBaleRound']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='hayBaleSquare']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntDisplayCaseAmmoLeftBroken']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntDisplayCaseAmmoMiddleBroken01']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntDisplayCaseAmmoMiddleBroken02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntDisplayCaseAmmoRightBroken']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntDisplayCaseAmmoRightBroken']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntFreezerGroceriesMiddleFullClosed']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntFreezerGroceriesMiddleFullClosed2']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntFreezerGroceriesMiddleFullClosedBroken']"><property name="SellableToTrader" value="false"/></append>	
+<append xpath="/blocks/block[@name='cntFreezerGroceriesMiddleFullClosedBroken2']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntShoesPileBusinessShoes']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntShoesPileCommercial01']"><property name="SellableToTrader" value="false"/></append>	
+<append xpath="/blocks/block[@name='cntShoesPileCommercial02']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntShoesPileLeatherBoots']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntShoesPileSandals']"><property name="SellableToTrader" value="false"/></append>	
+<append xpath="/blocks/block[@name='cntShoesPileSneakers']"><property name="SellableToTrader" value="false"/></append>
+<append xpath="/blocks/block[@name='cntShoesPileWomensHeels']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='cntAmmoPileMedium']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='cntAmmoPileSmall']"><property name="SellableToTrader" value="false"/></append>
 <append xpath="/blocks/block[@name='wallClock']"><property name="SellableToTrader" value="false"/></append>
